@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kareem Gamal Redy | Flutter Developer</title>
+<meta name="description" content="Portfolio of Kareem Gamal Redy, Flutter and Dart mobile developer in Cairo, Egypt.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1A0630;--ink:#FFF3F8;--mut:#C2A8DB;--pk:#FF4F9A;--am:#FFB84D;--card:#2A0F47;--line:#4A2477;--scr:#FFF8FC;--sink:#2B0A4A;--ok:#0E9F6E;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#FBF4FF;--ink:#2B0A4A;--mut:#6B4E8C;--pk:#D6256F;--am:#B86E00;--card:#fff;--line:#E4D0F5}}
+:root[data-theme="light"]{--bg:#FBF4FF;--ink:#2B0A4A;--mut:#6B4E8C;--pk:#D6256F;--am:#B86E00;--card:#fff;--line:#E4D0F5}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.65 Figtree,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Unbounded,Figtree,sans-serif;line-height:1.15}
+a{color:inherit}button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+:focus-visible{outline:3px solid var(--am);outline-offset:3px;border-radius:8px}
+.w{max-width:1120px;margin:0 auto;padding:0 22px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .w{display:flex;align-items:center;gap:20px;height:58px}
+nav b{font:800 1rem Unbounded,sans-serif;margin-right:auto;color:var(--pk)}
+nav a{text-decoration:none;font-weight:600;font-size:.9rem;color:var(--mut)}nav a:hover{color:var(--ink)}
+#th{width:38px;height:38px;border-radius:50%;border:1px solid var(--line)}
+#cv{display:block;width:100%;height:min(60vh,500px);min-height:340px;touch-action:pan-y;cursor:crosshair}
+.intro{text-align:center;padding:6px 0 46px}
+.role{font:500 clamp(1rem,2.6vw,1.5rem) Unbounded,sans-serif;color:var(--am)}
+.lead{max-width:620px;margin:16px auto 26px;color:var(--mut);font-size:1.08rem}
+.btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.b{display:inline-block;padding:12px 24px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--pk)}
+.b.p{background:var(--pk);color:#fff}
+.mq{overflow:hidden;border-block:1px solid var(--line);padding:14px 0;white-space:nowrap;background:var(--card)}
+.mq div{display:inline-block;animation:mq 32s linear infinite;font:800 1.15rem Unbounded,sans-serif;color:var(--mut)}
+.mq i{color:var(--pk);font-style:normal;margin:0 22px}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:84px 0}
+h2{font-size:clamp(1.6rem,3.6vw,2.5rem);margin-bottom:12px}
+.sub{color:var(--mut);max-width:640px;margin-bottom:34px}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
+.card h3{font-size:1.02rem;margin-bottom:8px;color:var(--am)}.card p{color:var(--mut);font-size:.94rem}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;margin-top:30px;border-top:1px solid var(--line)}
+.facts div{padding:16px 16px 16px 0;border-bottom:1px solid var(--line)}.facts small{display:block;color:var(--mut)}.facts b{font-weight:700}
+.demo{display:grid;grid-template-columns:1fr 330px;gap:44px;align-items:start}
+.pl{display:grid;gap:16px}
+.pr{border-left:4px solid var(--line);padding-left:20px;transition:border-color .2s}.pr.on{border-color:var(--pk)}
+.pr h3{font-size:1.25rem;margin-bottom:6px}.pr p{color:var(--mut)}
+.pr ul{margin:10px 0 12px 18px;font-size:.94rem}.pr li::marker{color:var(--pk)}
+.tg{display:flex;gap:6px;flex-wrap:wrap}.tg span{font-size:.8rem;font-weight:700;color:var(--am);border:1px solid var(--line);padding:3px 11px;border-radius:8px}
+.pr button{color:var(--pk);font-weight:700;margin-top:10px}
+.pw{position:sticky;top:80px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.phone{width:292px;height:566px;border-radius:44px;background:#0A0412;padding:11px;box-shadow:0 36px 70px -20px rgba(255,79,154,.4),inset 0 0 0 2px #3a2257;position:relative}
+.phone:before{content:"";position:absolute;top:17px;left:50%;width:78px;height:20px;margin-left:-39px;border-radius:12px;background:#0A0412;z-index:3}
+.scr{height:100%;border-radius:34px;background:var(--scr);color:var(--sink);overflow:auto;padding:46px 18px 18px;display:flex;flex-direction:column;gap:12px;scrollbar-width:none}
+.scr::-webkit-scrollbar{display:none}.scr h3{font-size:1.15rem}.m{color:#7a5f99;font-size:.8rem;line-height:1.35}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.c{padding:7px 14px;border-radius:999px;border:1.5px solid #E4D0F5;font-weight:700;font-size:.84rem}.c.on{background:var(--sink);color:#fff;border-color:var(--sink)}
+.sw{display:flex;gap:10px}.sw i{width:30px;height:30px;border-radius:50%;border:3px solid var(--scr);box-shadow:0 0 0 1.5px #E4D0F5;cursor:pointer}.sw i.on{box-shadow:0 0 0 2.5px #D6256F}
+.q{display:flex;align-items:center;gap:12px;font-weight:700}.q button{width:34px;height:34px;border-radius:50%;border:1.5px solid #E4D0F5;font-size:1.1rem}
+.row{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 0;border-bottom:1px solid #EEDFFA;font-weight:600;font-size:.9rem}
+.tot{font:800 1.5rem Unbounded,sans-serif;margin-top:auto}
+.cta{background:#D6256F;color:#fff;font-weight:700;padding:13px;border-radius:16px;width:100%}
+.ok{background:#DDF7EC;color:#08724F;padding:10px 12px;border-radius:12px;font-weight:700;font-size:.82rem}
+.td{display:flex;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid #EEDFFA;font-size:.88rem;font-weight:600;cursor:pointer}
+.td u{width:20px;height:20px;border-radius:6px;border:2px solid #D6256F;display:grid;place-items:center;font-size:.7rem;color:#fff;flex:none;text-decoration:none}
+.td.d u{background:#D6256F}.td.d span{text-decoration:line-through;color:#8f78a8}
+.scr input{width:100%;padding:10px 12px;border-radius:12px;border:1.5px solid #E4D0F5;background:#fff;color:var(--sink);font:inherit;font-size:.86rem}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.tabs button{padding:7px 13px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-weight:700;font-size:.8rem}
+.tabs button.on{background:var(--pk);color:#fff;border-color:var(--pk)}
+.sk{display:grid;gap:0}.sk div{display:grid;grid-template-columns:210px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.sk b{font:500 .95rem Unbounded,sans-serif}
+.cw{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.cw .card{padding:18px}.cw h3{color:var(--ink);font-size:.92rem}.cw p{font-size:.88rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.ct{text-align:center;border-top:1px solid var(--line)}.ct h2{font-size:clamp(2rem,6vw,4rem)}
+footer{padding:24px 0 40px;text-align:center;color:var(--mut);font-size:.88rem}
+@media(max-width:900px){.demo,.two{grid-template-columns:1fr}.pw{position:static;order:-1}.sk div{grid-template-columns:1fr;gap:6px}nav a.h{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="w"><b>KGR</b><a class="h" href="#about">About</a><a class="h" href="#work">Projects</a><a class="h" href="#skills">Skills</a><a class="h" href="#edu">Education</a><a href="#contact">Contact</a><button id="th" aria-label="Toggle light and dark theme">◐</button></div></nav>
+
+<header>
+<h1 class="vh">Kareem Gamal Redy</h1>
+<canvas id="cv" aria-hidden="true"></canvas>
+<div class="w intro"><p class="role">Flutter Developer</p>
+<p class="lead">Computer Science graduate with 2 years of experience building mobile apps with Flutter and Dart. Move your pointer over my name, or tap it, and watch it react.</p>
+<div class="btns"><a class="b p" href="#work">Try my apps</a><a class="b" href="#contact">Get in touch</a></div></div>
+</header>
+<div class="mq" aria-hidden="true"><div id="mq"></div></div>
+
+<section id="about"><div class="w"><h2>About me</h2>
+<p class="sub">I'm a Computer Science graduate and software developer with 2 years of experience in mobile application development using Flutter and Dart. I'm skilled in Firebase, RESTful APIs, OOP, debugging, and problem-solving. I build reliable, high-performance applications and contribute to multiple projects.</p>
+<div class="g">
+<div class="card"><h3>Flutter apps</h3><p>Shopping, ordering, task and delivery apps with clean screens and smooth interaction.</p></div>
+<div class="card"><h3>Firebase</h3><p>User authentication and cloud-backed features for apps that need accounts and reminders.</p></div>
+<div class="card"><h3>RESTful APIs</h3><p>Connecting apps to real data and services through clean API integration.</p></div>
+<div class="card"><h3>Debugging and quality</h3><p>Solving problems step by step to keep apps reliable and high-performing.</p></div>
+</div>
+<div class="facts"><div><small>Location</small><b>Maadi, Cairo, Egypt</b></div><div><small>Experience</small><b>2 years, Flutter and Dart</b></div><div><small>Degree</small><b>Bachelor of Computer Science</b></div><div><small>Languages</small><b>Arabic (native), English (B1)</b></div><div><small>Email</small><b>kg550462@gmail.com</b></div><div><small>Phone</small><b>01144022068</b></div></div>
+</div></section>
+
+<section id="work" style="background:var(--card)"><div class="w"><h2>Projects you can try</h2>
+<p class="sub">Four Flutter apps. Pick one on the right and use it: choose options, change quantities, place an order.</p>
+<div class="demo"><div class="pl" id="pl"></div>
+<div class="pw"><div class="phone"><div class="scr" id="scr"></div></div><div class="tabs" id="tabs" role="tablist"></div></div></div></div></section>
+
+<section id="skills"><div class="w"><h2>Skills</h2><p class="sub">The tools and habits I use to turn an idea into a working app.</p><div class="sk">
+<div><b>Mobile development</b><span class="tg"><span>Flutter</span><span>Dart</span><span>Provider</span></span></div>
+<div><b>Backend and integration</b><span class="tg"><span>Firebase</span><span>RESTful APIs</span></span></div>
+<div><b>Programming languages</b><span class="tg"><span>Dart</span><span>Java</span><span>C++</span><span>C#</span></span></div>
+<div><b>Tools and concepts</b><span class="tg"><span>Git and GitHub</span><span>OOP</span><span>Data Structures and Algorithms</span><span>Debugging</span><span>Software Development</span></span></div>
+<div><b>Working style</b><span class="tg"><span>Problem Solving</span><span>Time Management</span><span>Communication</span><span>Teamwork and Collaboration</span><span>Strong Technical Knowledge</span></span></div>
+</div></div></section>
+
+<section id="edu" style="background:var(--card)"><div class="w"><h2>Education</h2>
+<p class="sub"><b>Bachelor of Computer Science</b>, Thebes Academy, Computer Sciences Department. The coursework behind my engineering habits:</p>
+<div class="cw" id="cw"></div></div></section>
+
+<section><div class="w two">
+<div><h2>Courses</h2>
+<div class="card"><h3>Flutter and Dart Complete Development Course</h3><p>Route. Covered Dart, APIs, Flutter, Provider and Firebase.</p></div><br>
+<div class="card"><h3>Dart Basics Course</h3><p>Udemy. Instructor: Tharwat Sami.</p></div></div>
+<div><h2>Languages</h2>
+<div class="card"><h3>Arabic</h3><p>Native</p></div><br>
+<div class="card"><h3>English</h3><p>Good (B1)</p></div></div></div></section>
+
+<section class="ct" id="contact"><div class="w"><h2>Let's build your app.</h2><p class="lead">Open to Flutter developer roles and freelance projects.</p>
+<div class="btns"><a class="b p" href="mailto:kg550462@gmail.com">kg550462@gmail.com</a><a class="b" href="tel:01144022068">01144022068</a><a class="b" href="https://linkedin.com/in/kareem-gamal-49a94b35a/" target="_blank" rel="noopener">LinkedIn</a><a class="b" href="https://github.com/Kareem351" target="_blank" rel="noopener">GitHub</a></div></div></section>
+<footer>Kareem Gamal Redy, Flutter Developer, Maadi, Cairo, Egypt</footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const P=[
+ {n:'Clothing Store',t:['Flutter','Dart'],d:'Shopping application that allows users to browse clothing items, select sizes and colors, and choose quantity.',f:['Browse clothing items','Select size and color','Choose quantity']},
+ {n:'Coffee Drinks',t:['Flutter','Dart'],d:'Application that lets users select drinks by size and temperature, view prices, and complete ordering and payment.',f:['Select drink size and temperature','View prices','Complete ordering and payment']},
+ {n:'Todo App',t:['Flutter','Dart','Firebase'],d:'Task management app using Firebase authentication to organize daily, weekly, and monthly tasks with reminders and alerts.',f:['Firebase authentication','Daily, weekly and monthly tasks','Reminders and alerts']},
+ {n:'Vegetable Store',t:['Flutter','Dart'],d:'Application for purchasing vegetables, fruits, and groceries with quantity selection, address input, and delivery date scheduling.',f:['Buy vegetables, fruits and groceries','Select quantity','Enter delivery address','Schedule delivery date']}];
+const CW=[['OOP with Java','Classes, inheritance and polymorphism for structured code.'],['Data Structures and Algorithms with C++','Organizing data and writing efficient solutions.'],['Networks','How devices and apps communicate.'],['Artificial Intelligence','Core ideas behind intelligent systems.'],['Programming with C# and C++','Building programs across multiple languages.'],['Software Development','Taking software from idea to working product.'],['Project Management','Planning and delivering work with a team.'],['Software Engineering','Requirements, design and quality practices.'],['Problem Solving','Breaking hard problems into clear steps.'],['Systems Analysis and Design','Modeling what a system needs to do.'],['Soft Skills','Communication and collaboration at work.']];
+$('#cw').innerHTML=CW.map(c=>`<div class="card"><h3>${c[0]}</h3><p>${c[1]}</p></div>`).join('');
+const MQ=['Flutter','Dart','Firebase','RESTful APIs','Provider','OOP','Git and GitHub','Debugging','Problem Solving'];
+const mq=MQ.map(x=>x+'<i>✦</i>').join('');$('#mq').innerHTML=mq+mq+mq+mq;
+const COL=[['Sand','#D8B98A'],['Rose','#E8799F'],['Olive','#7A8450'],['Plum','#3C1A5E']],SZ=['S','M','L','XL'],CS=['Small','Medium','Large'],PER=['Daily','Weekly','Monthly'];
+const VEG=[['Tomatoes',2],['Apples',3],['Spinach',1.5]];
+const days=[0,1,2].map(i=>{const d=new Date();d.setDate(d.getDate()+i+1);return d.toLocaleDateString('en',{weekday:'short',day:'numeric'})});
+const S={tab:0,msg:'',cl:{c:0,s:1,q:1},co:{s:1,t:0},td:{p:0,v:[[['Review pull requests',0],['Practice Dart',1]],[['Ship the login screen',0],['Write widget tests',0]],[['Finish Firebase course',0]]]},vg:{q:[1,0,0],d:0,a:''}};
+const chip=(a,v,l,on)=>`<button class="c ${on?'on':''}" data-a="${a}" data-v="${v}">${l}</button>`;
+const qty=(a,v,n)=>`<div class="q"><button data-a="${a}" data-v="${v}-" aria-label="Decrease">−</button>${n}<button data-a="${a}" data-v="${v}+" aria-label="Increase">+</button></div>`;
+const msg=()=>S.msg?`<div class="ok" role="status">${S.msg}</div>`:'';
+const V={
+0(){const o=S.cl;return `<h3>Linen Shirt</h3><p class="m">Pick a color, size and quantity.</p><div class="sw">${COL.map((c,i)=>`<i data-a="cc" data-v="${i}" class="${i==o.c?'on':''}" style="background:${c[1]}" title="${c[0]}"></i>`).join('')}</div><div class="chips">${SZ.map((s,i)=>chip('cs',i,s,i==o.s)).join('')}</div>${qty('cq','',o.q)}${msg()}<div class="tot">$${35*o.q}</div><button class="cta" data-a="cadd">Add to cart</button>`},
+1(){const o=S.co,p=3+o.s*.75+(o.t?.5:0);return `<h3>Your coffee</h3><p class="m">Choose size and temperature.</p><div class="chips">${CS.map((s,i)=>chip('os',i,s,i==o.s)).join('')}</div><div class="chips">${chip('ot',0,'Hot',!o.t)}${chip('ot',1,'Iced',o.t)}</div><div class="row"><span>${CS[o.s]} ${o.t?'iced':'hot'} latte</span><span>$${p.toFixed(2)}</span></div>${msg()}<div class="tot">$${p.toFixed(2)}</div><button class="cta" data-a="oord">Order and pay</button>`},
+2(){const o=S.td,l=o.v[o.p];return `<h3>Tasks</h3><div class="chips">${PER.map((s,i)=>chip('tp',i,s,i==o.p)).join('')}</div><div>${l.map((x,i)=>`<div class="td ${x[1]?'d':''}" data-a="tt" data-v="${i}"><u>${x[1]?'✓':''}</u><span>${x[0]}</span></div>`).join('')||'<p class="m">No tasks yet. Add one below.</p>'}</div><input id="ti" placeholder="Add a task and press Enter" aria-label="New task">${msg()}<button class="cta" data-a="trem">Set reminder</button>`},
+3(){const o=S.vg,t=VEG.reduce((s,v,i)=>s+v[1]*o.q[i],0);return `<h3>Fresh groceries</h3>${VEG.map((v,i)=>`<div class="row"><span>${v[0]}<br><small class="m">$${v[1].toFixed(2)} / kg</small></span>${qty('vq',i,o.q[i])}</div>`).join('')}<input id="ad" placeholder="Delivery address" value="${o.a}" aria-label="Delivery address"><div class="chips">${days.map((d,i)=>chip('vd',i,d,i==o.d)).join('')}</div>${msg()}<div class="tot">$${t.toFixed(2)}</div><button class="cta" data-a="vok">Schedule delivery</button>`}};
+function render(){
+ $('#scr').innerHTML=V[S.tab]();
+ $('#tabs').innerHTML=P.map((p,i)=>`<button role="tab" aria-selected="${i==S.tab}" class="${i==S.tab?'on':''}" data-a="tab" data-v="${i}">${p.n}</button>`).join('');
+ $('#pl').innerHTML=P.map((p,i)=>`<article class="pr ${i==S.tab?'on':''}"><h3>${p.n}</h3><p>${p.d}</p><ul>${p.f.map(x=>`<li>${x}</li>`).join('')}</ul><div class="tg">${p.t.map(x=>`<span>${x}</span>`).join('')}</div><button data-a="tab" data-v="${i}">Try this app</button></article>`).join('');
+}
+function act(a,v){
+ S.msg='';const st=(x,d,lo,hi)=>Math.max(lo,Math.min(hi,x+(d=='+'?1:-1)));
+ if(a=='tab')S.tab=+v;
+ else if(a=='cc')S.cl.c=+v;else if(a=='cs')S.cl.s=+v;else if(a=='cq')S.cl.q=st(S.cl.q,v.slice(-1),1,9);
+ else if(a=='cadd')S.msg=`${S.cl.q} × Linen Shirt, ${SZ[S.cl.s]}, ${COL[S.cl.c][0]} added to cart.`;
+ else if(a=='os')S.co.s=+v;else if(a=='ot')S.co.t=+v;else if(a=='oord')S.msg='Payment complete. Your coffee is on its way.';
+ else if(a=='tp')S.td.p=+v;else if(a=='tt'){const x=S.td.v[S.td.p][+v];x[1]=x[1]?0:1}
+ else if(a=='trem')S.msg='Reminder set for 9:00 AM.';
+ else if(a=='vq'){const i=+v[0];S.vg.q[i]=st(S.vg.q[i],v.slice(-1),0,9)}
+ else if(a=='vd')S.vg.d=+v;else if(a=='vok')S.msg=`Delivery scheduled for ${days[S.vg.d]}.`;
+ render();
+}
+document.addEventListener('click',e=>{const t=e.target.closest('[data-a]');if(t)act(t.dataset.a,t.dataset.v)});
+document.addEventListener('keydown',e=>{if(e.target.id=='ti'&&e.key=='Enter'&&e.target.value.trim()){S.td.v[S.td.p].push([e.target.value.trim(),0]);S.msg='';render();$('#ti').focus()}});
+document.addEventListener('input',e=>{if(e.target.id=='ad')S.vg.a=e.target.value});
+$('#th').onclick=()=>{const r=document.documentElement,d=r.dataset.theme?r.dataset.theme=='dark':!matchMedia('(prefers-color-scheme:light)').matches;r.dataset.theme=d?'light':'dark'};
+render();
+
+/* Particle name: scatters in, assembles, flees the pointer, bursts on tap */
+const cv=$('#cv'),cx=cv.getContext('2d'),RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+let W,H,pts=[],mx=-999,my=-999;
+function build(){
+ const dpr=Math.min(devicePixelRatio||1,2);W=cv.clientWidth;H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0);
+ const o=document.createElement('canvas');o.width=W;o.height=H;const c=o.getContext('2d'),fs=Math.min(W/5.9,H*.42);
+ c.textAlign='center';c.textBaseline='middle';c.font=`800 ${fs}px Unbounded,sans-serif`;c.fillText('KAREEM',W/2,H*.4);
+ c.font=`800 ${fs*.34}px Unbounded,sans-serif`;c.fillText('GAMAL REDY',W/2,H*.4+fs*.78);
+ const d=c.getImageData(0,0,W,H).data,gap=W<600?4:5,T=[];
+ for(let y=0;y<H;y+=gap)for(let x=0;x<W;x+=gap)if(d[(y*W+x)*4+3]>128)T.push([x,y]);
+ pts=T.map((t,i)=>{const p=pts[i]||{x:Math.random()*W,y:Math.random()<.5?-20:H+20,vx:0,vy:0};p.tx=t[0];p.ty=t[1];p.c=`hsl(${335-(t[0]/W)*290},95%,62%)`;if(RM){p.x=p.tx;p.y=p.ty}return p});
+}
+function loop(){
+ cx.clearRect(0,0,W,H);
+ for(const p of pts){
+  p.vx+=(p.tx-p.x)*.045;p.vy+=(p.ty-p.y)*.045;
+  const dx=p.x-mx,dy=p.y-my,r=dx*dx+dy*dy;
+  if(r<9000){const f=(9000-r)/9000*3.2,n=Math.sqrt(r)||1;p.vx+=dx/n*f;p.vy+=dy/n*f}
+  p.vx*=.84;p.vy*=.84;p.x+=p.vx;p.y+=p.vy;
+  cx.fillStyle=p.c;cx.fillRect(p.x,p.y,2.6,2.6);
+ }
+ requestAnimationFrame(loop);
+}
+cv.addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top});
+cv.addEventListener('pointerleave',()=>{mx=my=-999});
+cv.addEventListener('pointerdown',()=>{if(!RM)for(const p of pts){p.vx+=(Math.random()-.5)*60;p.vy+=(Math.random()-.5)*60}});
+addEventListener('resize',()=>{clearTimeout(window._r);window._r=setTimeout(build,150)});
+Promise.race([document.fonts.load('800 60px Unbounded'),new Promise(r=>setTimeout(r,1500))]).then(()=>{build();loop()});
+</script>
+</body>
+</html>
